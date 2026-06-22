@@ -1,0 +1,20 @@
+# CS253 Assignment 1
+Memory-Efficient Versioned File Indexer Using C++
+
+Name: Divya Prakash Pandey  
+Roll Number: 240369
+
+## Compile
+
+g++ -O2 240369_divya.cpp -o analyzer 
+
+## Run Examples
+
+Word query:
+./analyzer --file dataset_v1.txt --version v1 --buffer 512 --query word --word <word>
+
+Top-K query:
+./analyzer --file dataset_v1.txt --version v1 --buffer 512 --query top --top k
+
+Difference query:
+./analyzer --file1 dataset_v1.txt --version1 v1 --file2 dataset_v2.txt --version2 v2 --buffer 512 --query diff --word <word>
